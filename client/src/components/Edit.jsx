@@ -11,7 +11,7 @@ export default  function Edit(){
     useEffect(()=>{
         const Fetching= async ()=>{
             try{
-                const response= await axios.get(`http://localhost:8001/api/read/${code}`)
+                const response= await axios.get(`https://pupad.onrender.com/api/read/${code}`)
                 setText(response.data)
             } 
             catch(err){
@@ -34,7 +34,7 @@ export default  function Edit(){
 
     const HandleSave=async ()=>{
     try {
-        await  axios.put(`http://localhost:8001/api/edit/${code}`,{code,text}) 
+        await  axios.put(`https://pupad.onrender.com/api/edit/${code}`,{code,text}) 
         toast.success('Saved successfully!', {
           position: "bottom-right",  
           autoClose: 2000,  
@@ -71,7 +71,7 @@ export default  function Edit(){
     }
     const HandleSaveAndClose= async ()=>{
         try {
-            await  axios.put(`http://localhost:8001/api/edit/${code}`,{code,text})
+            await  axios.put(`https://pupad.onrender.com/api/edit/${code}`,{code,text})
         navigate('/')
         } catch (error) {
             toast.error(error.message || 'error occurred' , {

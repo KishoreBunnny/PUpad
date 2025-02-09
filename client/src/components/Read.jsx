@@ -14,7 +14,7 @@ export default function Read() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get(`http://localhost:8001/api/read/${code}`);
+                const response = await axios.get(`https://pupad.onrender.com/api/read/${code}`);
                 setData(response.data); 
                 setHighlightedData(response.data); 
             } catch (error) {

@@ -25,10 +25,10 @@ export default function LandingPage(){
               });
     }
     
-    const res=await axios.post('http://localhost:8001/api/code',{code})
+    const res=await axios.post('https://pupad.onrender.com/api/code',{code})
 
     if(res.data.id === 'NoCode'){
-      const createCode=await axios.post(`http://localhost:8001/api/edit/${code}`)
+      const createCode=await axios.post(`https://pupad.onrender.com/api/edit/${code}`)
       navigate(`/home/edit/${createCode.data.id}`);
     }
     else{
