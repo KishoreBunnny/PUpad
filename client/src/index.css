@@ -1,0 +1,8 @@
+@import "tailwindcss";
+.algin{
+  align-items: center;
+}
+
+body{
+  background-color: black;
+}
