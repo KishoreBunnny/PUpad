@@ -6,8 +6,8 @@ const port=process.env.PORT || 8001
 const path=require('path');
 
 mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
     // ssl: true,
     // sslValidate: true, 
   })
