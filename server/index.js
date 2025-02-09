@@ -8,8 +8,8 @@ const path=require('path');
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    ssl: true,
-    sslValidate: false, 
+    // ssl: true,
+    // sslValidate: true, 
   })
   .then(() => console.log("MongoDB connected"))
   .catch((error) => console.error("MongoDB connection error:", error));
