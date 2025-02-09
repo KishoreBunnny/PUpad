@@ -2,7 +2,7 @@ const express=require('express');
 const mongoose=require('mongoose');
 const cors=require('cors');
 require('dotenv').config();
-const PORT=process.env.PORT || 8001
+const port=process.env.PORT || 8001
 const path=require('path');
 
 mongoose.connect(process.env.MONGODB_URI, {
@@ -99,6 +99,6 @@ app.get('*',(_,res)=>{
 })
 
 
-app.listen(PORT,()=>{
+app.listen(port,()=>{
     console.log('Server is running ')
 })
