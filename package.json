@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build":"npm install && npm install --prefix client && npm run build --prefix client",
-    "start":"node server/index.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "start": "node server/index.js",
     "dev": "node server/index.js"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "mongodb": "^6.13.0",
     "mongoose": "^8.10.0",
     "nodemon": "^3.1.9"
   }
