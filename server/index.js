@@ -5,8 +5,14 @@ require('dotenv').config();
 const PORT=process.env.PORT || 8001
 const path=require('path');
 
-mongoose.connect(process.env.MONGODB_URI)
-.then(()=>{console.log("MongoDB connect")})
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    ssl: true,
+    sslValidate: false, 
+  })
+  .then(() => console.log("MongoDB connected"))
+  .catch((error) => console.error("MongoDB connection error:", error));
 
 const Notes=require('./Models/Notes.model')
 
