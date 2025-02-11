@@ -78,7 +78,7 @@ export default function Read() {
                     />
                 </div>
 
-                <div className="w-full h-[90%] bg-zinc-200 overflow-auto p-4 text-zinc-400">
+                <div className="w-full h-[90%] bg-zinc-200 overflow-auto p-4 text-zinc-400 selection:bg-zinc-500 selection:text-zinc-700">
                     <pre className="whitespace-pre-wrap">{highlightedData}</pre>
                 </div>
             </div>

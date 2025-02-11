@@ -106,11 +106,11 @@ export default  function Edit(){
                 <textarea 
                  value={ text }
                 onChange={HandleText}
-                name="" id="" placeholder="Write Your Notes Here" className="w-full h-full border-amber-300 bg-zinc-300 p-2 text-zinc-700">
+                name="" id="" placeholder="Write Your Notes Here" className="w-full h-full border-amber-300 bg-zinc-300 p-2 text-zinc-700
+                 selection:bg-zinc-500 selection:text-zinc-700">
                 </textarea>
             </div>
         </div>  
-
 
         <div className="lg:w-full lg:h-10 h-6 lg:gap-20 p-6 gap-3 flex justify-center algin  bg-zinc-300 rounded-xl">
                     <button className="bg-neutral-700 rounded-[10px] p-2 text-white cursor-pointer hover:bg-neutral-600"
